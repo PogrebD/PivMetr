@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/common_spacing"
+        android:paddingTop="@dimen/between_common_small_spacing"
+        android:paddingEnd="0dp"
+
+        android:paddingBottom="@dimen/common_spacing"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/baseline_square_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Немецкое"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/additional_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Россия, 0.48 л., 4.6%"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/additional_information" />
+
+        <TextView
+            android:id="@+id/number_of_ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оценок:4543"
+            app:layout_constraintStart_toEndOf="@id/avatar"
+            app:layout_constraintTop_toBottomOf="@id/rating" />
+
+        <Space
+            android:id="@+id/space_after_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_spacing"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="Пиво «Немецкое» сварено по рецепту известного немецкого пивовара Маркуса Бикеля. Пиво «Немецкое» светлое сварено для особых ценителей пенного напитка по традиционной немецкой технологии из светлого ячменного пивоваренного солода и отборного хмеля, выращенного в Германии. Пиво обладает светло-золотистым цветом, приятным ароматом и легкой, быстропроходящей горчинкой. Оцените в полной мере вкус сорта, приготовленного в лучших традициях европейского пивоварения.
+
+Данная информация носит исключительно ознакомительный характер. Характеристика и внешний вид товара в магазинах могут отличаться от указанных на сайте. Актуальные цены и количество товаров уточняйте в магазинах. Не является публичной офертой."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/space_after_avatar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_review"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/baseline_reviews_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            tools:text="Добавить отзыв" />
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:src="@drawable/baseline_star_outline_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
