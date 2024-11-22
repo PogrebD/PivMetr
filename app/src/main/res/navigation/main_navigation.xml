@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/bottomMenuFragment">
+
+    <fragment
+        android:id="@+id/bottomMenuFragment"
+        android:name="com.pogreb.pivmetr.fragment.BottomMenuFragment"
+        android:label="PivMetr"
+        tools:layout="@layout/fragment_bottom_menu">
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_newPivFragment"
+            app:destination="@id/newPivFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPivFragment"
+        android:name="com.pogreb.pivmetr.fragment.NewPivFragment"
+        android:label="fragment_new_piv"
+        tools:layout="@layout/fragment_new_piv" />
+    <fragment
+        android:id="@+id/pivsFragment"
+        android:name="com.pogreb.pivmetr.fragment.PivsFragment"
+        android:label="PivsFragment"
+        tools:layout="@layout/fragment_pivs">
+        <action
+            android:id="@+id/action_pivsFragment_to_newPivFragment"
+            app:destination="@id/newPivFragment" />
+    </fragment>
+</navigation>

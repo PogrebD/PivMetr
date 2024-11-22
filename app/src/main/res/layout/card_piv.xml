@@ -60,6 +60,18 @@
             app:layout_constraintStart_toEndOf="@id/avatar"
             app:layout_constraintTop_toBottomOf="@id/rating" />
 
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="@string/menu"
+            android:padding="12dp"
+            app:menu="@menu/edit_piv_menu"
+            android:src="@drawable/baseline_more_vert_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <Space
             android:id="@+id/space_after_avatar"
             android:layout_width="wrap_content"

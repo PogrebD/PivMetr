@@ -36,4 +36,12 @@ class InMemoryPivRepository : PivRepository {
         }
     }
 
+    override fun savePiv(id: Long, description: String) {
+        TODO("Not yet implemented")
+    }
+
+    override fun editById(id: Long, description: String) {
+        TODO("Not yet implemented")
+    }
+
 }

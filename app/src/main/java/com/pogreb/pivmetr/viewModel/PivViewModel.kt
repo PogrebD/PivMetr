@@ -28,4 +28,12 @@ class PivViewModel(private val repository: PivRepository) : ViewModel() {
     fun favoriteById(id:Long) {
         repository.favoriteById(id)
     }
+
+    fun deleteById(id: Long) {
+
+    }
+
+    fun saveId(id: Long) {
+
+    }
 }

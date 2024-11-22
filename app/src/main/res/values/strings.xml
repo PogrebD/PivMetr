@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PivMetr</string>
+    <string name="delete">Удалить</string>
+    <string name="edit_piv_title">Редактировать</string>
+    <string name="new_piv_title">Создать пиво</string>
+    <string name="content">контент</string>
+    <string name="menu">меню</string>
+    <string name="add_piv_description">добавить пиво</string>
+    <string name="save">сохранить</string>
+    <string name="piv_menu">пиво</string>
+    <string name="calendar_menu">календарь</string>
+    <string name="profile_menu">профиль</string>
+    <string name="empty_description">пустое описание</string>
 </resources>
